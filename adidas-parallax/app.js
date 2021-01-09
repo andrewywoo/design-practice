@@ -12,7 +12,7 @@ const purchase = document.querySelector('.parallax-card__purchase');
 // Event Listeners
 container.addEventListener('mousemove', (e) => {
     const xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-    const yAxis = (window.innerWidth / 2 - e.pageY) / 10;
+    const yAxis = (window.innerHeight / 2 - e.pageY) / 10;
     card.style.transform = `rotateX(${yAxis}deg) rotateY(${xAxis}deg)`;
 });
 
