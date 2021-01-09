@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.parallax-card__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-card__card{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 25rem;
+    height: 60vh;
+    padding: 80px 40px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-items: center;
+}
+
+.circle-backdrop {
+    margin: auto;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(255, 91, 25), rgb(56, 118, 253));
+    z-index: -5;
+}
+
+.parallax-card__title,
+.parallax-card__subtitle,
+.parallax-card__purchase{
+    transition: all .5s ease-out;
+}
+
+.parallax-card__img{
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    transition: all .5s ease-out;
+}
+
+.parallax-card__sizes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    transition: all .5s ease-out;
+}
+
+/* Utility classes */
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
+.btn {
+    border: none;
+    height: 32px;
+}
+
+.btn.primary {
+    background-color: red;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: darkgray;
+    width: 64px;
+    height: 24px;
+}
+
+.rounded-border {
+    border-radius: 1.2rem;
+}
+
+.shadow {
+    box-shadow: 1px 3px 5px 1px rgb(184, 182, 182);
+}
+
+.text-regular {
+    font: initial;
+    color: grey;
+}
+
+
